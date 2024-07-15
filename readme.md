@@ -8,7 +8,7 @@ it loops trough a parent folder housing all servers and uses a configurable iden
 If there is no shmoovin script present in the csp config in the server folders cfg folder it will not trigger and leave the folder alone.
 It gets the server name from the server config.
 
-if there are too much characters in the discord message the bot will limit the amount of entries until it fits.
+if there are too much characters in the discord message the bot will first shorten usernames and remove unneeded spaces, if this does not stay below the limit it will start limiting the amount of entries in the leaderboard until it fits. to avoid this limit the amount of text displayed in the discord message by removing classes, stages or the amount of entries
 
 laptimes and full server info can be set on or off in the configs as described below.
 
